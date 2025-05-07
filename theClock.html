@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./theClock.css" />
+    <script src="./theClock.mjs" type="module" defer></script>
+    <script type="module" src="./numTheClock.mjs" defer></script>
+    <script type="module" src="./menuClickFunction.mjs" defer></script>
+  </head>
+
+  <body>
+    <div class="everything_wrapper">
+      <div class="menu_wrapper">
+        <div class="menu_icon" id="menuIcon"></div>
+        <nav class="menu" id="menu">
+          <div class="menu_lists numericClock" id="numClockSwitcher">
+            <span>Numeric Clock</span>
+          </div>
+          <div class="menu_lists wallClock" id="wallClockSwitcher">
+            <span>Wall Clock</span>
+          </div>
+          <div class="menu_lists light_switcher" id="backGroundLight">
+            <span id="light"></span>
+          </div>
+        </nav>
+      </div>
+      <div class="main_clock" id="wallClock">
+        <div class="clock">
+          <div class="arrows sec_arrow" id="secArrow"></div>
+          <div class="arrows min_arrow" id="minArrow"></div>
+          <div class="arrows hour_arrow" id="hourArrow"></div>
+        </div>
+      </div>
+      <div class="num_clock_wrapper" id="numClock">
+        <div class="num_clock">
+          <div class="hour_wrapper">
+            <span id="hourNum">00</span>
+          </div>
+          <div>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="min_wrapper">
+            <span id="minNum">00</span>
+          </div>
+        </div>
+      </div>
+      <div class="space_taker"></div>
+    </div>
+  </body>
+</html>
